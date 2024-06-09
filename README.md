@@ -85,7 +85,7 @@ Depois apliquei a técnica Regra de Associação Apriori, também conhecida como
 
 É uma técnica que faz a combinação de duas variáveis qualitativas, no caso desse projeto, a combinação de dois produtos (de uma cesta de compras) e calcula a probabilidade de compra atrelada. A porcentagem de "Suporte" significa quantas vezes os 2 produtos aparecem juntos entre as preferências dos clientes. E a porcentagem de "Confiança" significa a chance de o cliente comprar determinado produto, sempre que comprar outro. Assim, temos uma recomendação de produtos de acordo com compras anteriores e descobrimos as tendências mais lucrativas.
 
-Depois foi feito o tratamento final dos dados e o resultado do workflow foi salvo no [Excel](https://docs.google.com/spreadsheets/d/1boZkF4Rlvn1ATEar-FhoRFxAr3TBxeUK/edit#gid=1236487913).
+Depois foi feito o tratamento final dos dados e o resultado do workflow foi salvo no [Excel](https://docs.google.com/spreadsheets/d/1boZkF4Rlvn1ATEar-FhoRFxAr3TBxeUK/edit#gid=1236487913). E o dashboard pode ser visualizado [aqui](https://app.powerbi.com/view?r=eyJrIjoiMDFjMDQ1YTMtYmFlZC00MDEyLTkwZWMtOTY3MDEwMDIwNmI5IiwidCI6IjQ0OTlmNGZmLTI0YTYtNGI0Mi1iN2VmLTEyNGFmY2FkYzkxMyJ9).
 
 ![image](https://github.com/thainams/recomendacao-ecommerce/assets/97771347/af811958-6be1-4784-8f5d-decf238970c3)
 
@@ -93,33 +93,38 @@ Resultado da Análise de Recomendação de Produtos.
 
 É possível buscar insights sobre quais os itens mais recomendados de acordo com a escolha de um produto?
 
-COLOCAR DASHBOARD AQUI
+![image](https://github.com/thainams/recomendacao-ecommerce/assets/97771347/543b7f3e-656f-48ec-b80d-d1ba3ce8d5ff)
 
-• Dos clientes que compram "soda", 6,47% também compram "blueberries", 5,11% compram "cereal" e 10,40% compram "crunchy oats 'n honey granola bars".
-Clientes que possuem um café da manhã equilibrado?
-
-• Dos clientes que compram "pineapple chunks", 11,30% compram "blueberries", 10,80% também compram "boneless skinless chicken breasts", e 6,02% compram "creamy almond butter" e 6,61% compram "berry medley".
-Talvez seja um cliente que irá preparar um almoço de peito de frango com abacaxi? E a sobremesa terá mirtilos, manteiga de amêndoa cremosa e frutas vermelhas?
+De todos os clientes que compraram “refrigerante”: 10,40% também compraram “barras de granola crocantes de aveia e mel”, 6,93% também compraram “chips orgânicos de tortilla”, 6,69% compraram “água mineral com gás” e 6,47% compraram “amoras”.
 
 ## Implantação
 
-Seguem minhas recomendações:
+SEm complemento a este artigo, irei recomendar o uso da estrutura de gestão ágil de projetos, SCRUM. Seus benefícios incluem maior transparência e visibilidade, flexibilidade e adaptabilidade, melhoria contínua, engajamento e empoderamento da equipe.
 
-### 👀O quê?
-Utilização do dashboard criado, que demonstra a probabilidade de compra de acordo com a escolha de um produto.
+### Formação da Equipe Scrum
+Essa equipe é composta por três papéis fundamentais. Estes são o Product Owner (dono do projeto), SCRUM Master (como se fosse o coach da equipe, ele auxilia o P.O) e a equipe de desenvolvimento desse projeto.
 
-### 🤔Por quê?
-Por exemplo, dos clientes que compram o produto "honey nut cherrios", 10,90% compram "blueberries" e 11,10% também compram "100% whole wheat bread". Ou seja, são clientes que estão comprando produtos para o café da manhã? AUMENTO DA PROBABILIDADE (SOMA?)
+### Definição do Backlog do Produto
+É a lista de todas as funcionalidades e melhorias organizadas por ordem de prioridade que serão realizadas ao longo do projeto.
 
-### 🤨Quem?
-Time de Marketing, Time de Experiência do Usuário, Time de Desenvolvedores de Front-End e Back-End.
+### Planejamento da Sprint
+“Sprint” é um período fixo, dura em média de 2 a 4 semanas, onde a equipe trabalha para entregar um conjunto de funcionalidades (não precisam ser todas de uma vez).
 
-### ✍🏾Como?
-Formação de um grupo de teste e controle. O grupo de teste seria composto por um grupo seleto de clientes que mais compram no site. Esses clientes teriam acesso ao novo site com a recomendação de produtos, que aumentaria a rentabilidade da empresa. O grupo de controle seria formado também por clientes mais frequentes, mas não teriam acesso ao site com a recomendação de produtos, nada iria mudar para eles. O comportamento deles seria um valor final menor de compras comparados aos clientes do grupo de teste.
+![image](https://github.com/thainams/recomendacao-ecommerce/assets/97771347/63004851-4c86-4277-938e-1e45a6fa1803)
 
-### 💰Qual o custo?
-Contratação temporária de desenvolvedores front-end e back-end. Aumento da carga horária dos times de Marketing e Experiência do Usuário. Criação de escalas para otimizar a produtividade nesse período devido ao aumento de carga horária de trabalho.
+Sprint do Projeto de Recomendação de Produtos.
+
+Recomendo a criação de duas versões do site do e-commerce, uma com recomendação de produtos e outra sem. Por exemplo no site com a recomendação, faz sentido indicarmos peitos de frango desossados e homus quando os clientes selecionarem peito de peru moído, porque são os produtos mais comprados em “conjunto”. Assim provavelmente teríamos um acréscimo de produtos no carrinho desse cliente. E em um site sem recomendação de produtos, é provável que não haja esse acréscimo. Essas duas versões seriam testadas através de testes A/B para verificarmos qual gera uma rentabilidade maior.
+
+### Realização das Daily Scrums
+São reuniões diárias com duração em média de 15 minutos, onde a equipe de desenvolvimento conversa sobre o que foi realizado no dia anterior, o que será feito no dia atual e quais foram os problemas encontrados.
+
+### Revisão da Sprint e Retrospectiva
+No final de cada sprint, a equipe faz uma revisão desta e mostra o que foi feito e recebe feedback dos stakeholders. Em seguida, na retrospectiva a equipe analisa o que deu certo, o que pode ser melhorado (possíveis mudanças) e define as ações para o próximo sprint. Essas etapas são importantes para melhoria contínua do processo.
+
+Essas etapas serão repetidas ao longo do projeto. A cada sprint, as experiências anteriores ajudam a aprimorar o trabalho através das adaptações ao longo do processo, visando entrega de valor ao cliente. Ou seja, os próximos sprints além de incluir as funcionalidades descritas no backlog do produto também terão as mudanças sugeridas pelos stakeholders.
 
 ## Considerações Finais
-No artigo acima fiz uma análise exploratória das vendas da Pão de Mel, verifiquei a distribuição das vendas por departamento, dia da semana, hora do dia e fiz o ranking dos produtos mais vendidos em todos os departamentos. Oferecendo insights importantes para tomada de decisão tanto da parte estratégica quanto do time de Marketing, demonstrei como funciona a Análise de Recomendação de Produtos.
+No artigo acima fiz uma análise exploratória das vendas da Pão de Mel, verifiquei a distribuição das vendas por departamento, dia da semana, hora do dia e fiz o ranking dos produtos mais vendidos em todos os departamentos. Oferecendo insights importantes para tomada de decisão tanto da parte estratégica quanto do time de Marketing e demonstrei como funciona a Análise de Recomendação de Produtos. Por fim, indiquei a metodologia ágil SCRUM para auxiliar na implantação da recomendação de produtos na Pão de Mel.
+
 Espero que tenha gostado do meu projeto, qualquer feedback é bem-vindo, estou à disposição por [aqui](https://www.linkedin.com/in/thainaoliveirams/)!
